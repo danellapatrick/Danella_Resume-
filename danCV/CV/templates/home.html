@@ -368,7 +368,7 @@ COMPUTING, KARACHI
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="" method="post" id="contactForm" name="contactForm">{%csrf_token%}
 					<fieldset>
 
                   <div>
@@ -392,7 +392,7 @@ COMPUTING, KARACHI
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
+			  <button class="submit"><a href='/demo'>Submit</a></button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
