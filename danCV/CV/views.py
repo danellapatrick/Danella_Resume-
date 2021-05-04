@@ -15,3 +15,5 @@ def pdf_view(request):
             return response
     else:
         return HttpResponseNotFound("The Request does not found ")
+def demo(request):
+    return render(request,'demo.html')
